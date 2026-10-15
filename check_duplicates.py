@@ -7,7 +7,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 
 TRAIN_CSV = PROJECT_ROOT / "data" / "splits" / "train.csv"
 VAL_CSV = PROJECT_ROOT / "data" / "splits" / "val.csv"
-TEST_CSV = PROJECT_ROOT / "data" / "splits" / "test.csv"
+TEST_CSV = PROJECT_ROOT / "data" / "splits" / "test.csv" 
 
 
 def md5_hash(path):
@@ -23,6 +23,7 @@ def md5_hash(path):
 def add_hashes(df, split_name):
     print(f"Hashing {split_name}...")
 
+    
     df = df.copy()
     df["hash"] = df["image_path"].apply(md5_hash)
 
