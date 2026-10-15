@@ -7,6 +7,7 @@ train_transform = transforms.Compose([
     transforms.RandomRotation(
         degrees=3
     ),
+    
 
     transforms.RandomAffine(
         degrees=0,
