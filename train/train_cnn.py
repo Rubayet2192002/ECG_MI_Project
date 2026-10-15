@@ -41,7 +41,6 @@ if str(PROJECT_ROOT) not in sys.path:
         str(PROJECT_ROOT)
     )
 
-
 from src.ptbxl_image_dataset import PTBXLImageDataset
 from models.cnn import ECGResNet18
 
