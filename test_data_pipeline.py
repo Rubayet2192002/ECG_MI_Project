@@ -33,7 +33,6 @@ test_dataset = ECGDataset(
     transform=val_test_transform
 )
 
-
 print("\nDataset sizes")
 print("Train:", len(train_dataset))
 print("Validation:", len(val_dataset))
