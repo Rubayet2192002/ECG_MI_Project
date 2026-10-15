@@ -12,6 +12,12 @@ datasets/
 # PTB-XL dataset
 PTB_XL/
 
+# Local datasets and generated model artifacts
+checkpoints/
+old_image_pipeline/ECG_DATA/
+old_image_pipeline/old_checkpoints/
+results/figures.zip
+
 # Python environments and generated files
 __pycache__/
 *.py[cod]
