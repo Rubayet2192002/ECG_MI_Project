@@ -1,0 +1,23 @@
+{
+    "model": "CNN + Transformer Hybrid",
+    "dataset": "PTB-XL demo subset",
+    "train_samples": 800,
+    "validation_samples": 200,
+    "test_samples": 200,
+    "best_validation_f1": 0.6166666666666667,
+    "test_accuracy": 0.785,
+    "test_precision": 0.559322033898305,
+    "test_recall": 0.66,
+    "test_f1": 0.6055045871559633,
+    "test_auc": 0.8480666666666667,
+    "confusion_matrix": [
+        [
+            124,
+            26
+        ],
+        [
+            17,
+            33
+        ]
+    ]
+}

@@ -1,0 +1,115 @@
+
+============================================================
+TRANSFORMER LAYER-FREEZING STUDY — FINAL SUMMARY
+============================================================
+
+MODEL:
+20-layer Transformer
+
+TOTAL PARAMETERS:
+688,130
+
+EXPERIMENTS:
+Freeze 0
+Freeze 4
+Freeze 8
+Freeze 12
+Freeze 16
+
+
+------------------------------------------------------------
+MAIN PERFORMANCE RESULT
+------------------------------------------------------------
+
+Freeze 0:
+Test Accuracy = 77.50%
+Test F1       = 58.72%
+Test AUC      = 79.61%
+
+Freeze 8:
+Test Accuracy = 77.00%
+Test F1       = 58.18%
+Test AUC      = 80.01%
+
+Freeze 12:
+Test Accuracy = 76.50%
+Test F1       = 58.41%
+Test AUC      = 79.55%
+
+Freeze 16:
+Test Accuracy = 74.00%
+Test F1       = 55.93%
+Test AUC      = 79.44%
+
+
+------------------------------------------------------------
+MAIN EFFICIENCY RESULT
+------------------------------------------------------------
+
+Freeze 0:
+Trainable parameters = 688,130
+Average epoch time   = 29.17 sec
+Peak GPU memory      = 60.99 MB
+
+Freeze 12:
+Trainable parameters = 286,466
+Parameter reduction  = 58.37%
+Average epoch time   = 25.19 sec
+Time reduction       = 13.65%
+Peak GPU memory      = 51.97 MB
+
+Freeze 16:
+Trainable parameters = 152,578
+Parameter reduction  = 77.83%
+Average epoch time   = 24.09 sec
+Time reduction       = 17.40%
+Peak GPU memory      = 48.96 MB
+
+
+------------------------------------------------------------
+INTERPRETATION
+------------------------------------------------------------
+
+Increasing the Transformer depth from 2 layers to 20 layers
+did not automatically improve generalization.
+
+The 20-layer architecture had much higher model capacity, but
+the smaller training dataset made the deeper model more prone
+to overfitting.
+
+Progressive layer freezing showed that many early Transformer
+encoder layers do not need to be updated during fine-tuning.
+
+Freezing 12 of 20 encoder layers reduced the number of
+trainable parameters by approximately 58.4%, while test
+accuracy decreased by only 1 percentage point compared with
+full fine-tuning.
+
+The controlled efficiency benchmark also showed approximately
+13.6% lower training time per epoch for Freeze-12.
+
+Freeze-16 achieved the greatest efficiency:
+approximately 77.8% fewer trainable parameters and 17.4%
+lower training time per epoch.
+
+However, Freeze-16 produced a larger decline in test
+classification performance.
+
+Therefore, Freeze-12 represents a strong balance between
+classification performance and computational efficiency.
+
+
+------------------------------------------------------------
+FINAL CONCLUSION
+------------------------------------------------------------
+
+The results demonstrate that full fine-tuning of every
+Transformer encoder layer is not always necessary for
+ECG-based myocardial infarction classification.
+
+A large portion of the early encoder layers can be frozen
+while maintaining similar classification performance.
+
+Among the investigated configurations, freezing the first
+12 encoder layers provided the strongest overall
+performance-efficiency trade-off.

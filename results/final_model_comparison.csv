@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1_Score,ROC_AUC
+CNN (ResNet18),76.0,51.56,66.0,57.89,80.75
+Transformer,73.5,48.35,88.0,62.41,84.46
+Hybrid,78.5,55.93,66.0,60.55,84.81

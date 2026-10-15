@@ -1,0 +1,33 @@
+{
+    "experiment": "freeze_16",
+    "total_encoder_layers": 20,
+    "frozen_encoder_layers": 16,
+    "trainable_encoder_layers": 4,
+    "total_parameters": 688130,
+    "trainable_parameters": 152578,
+    "frozen_parameters": 535552,
+    "trainable_percentage": 22.172845247264323,
+    "best_epoch": 3,
+    "epochs_completed": 6,
+    "best_validation_f1": 0.5663716814159292,
+    "test_loss": 0.595447171330452,
+    "test_accuracy": 0.74,
+    "test_precision": 0.4852941176470588,
+    "test_recall": 0.66,
+    "test_f1": 0.559322033898305,
+    "test_auc": 0.7943999999999999,
+    "confusion_matrix": [
+        [
+            115,
+            35
+        ],
+        [
+            17,
+            33
+        ]
+    ],
+    "training_time_seconds": 189.52798581123352,
+    "training_time_minutes": 3.1587997635205585,
+    "learning_rate": 0.0001,
+    "batch_size": 8
+}

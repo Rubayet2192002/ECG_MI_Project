@@ -1,0 +1,24 @@
+{
+    "model": "ResNet18",
+    "dataset": "PTB-XL rendered ECG demo subset",
+    "train_samples": 800,
+    "validation_samples": 200,
+    "test_samples": 200,
+    "best_validation_f1": 0.6140350877192983,
+    "test_loss": 0.7007991245388985,
+    "test_accuracy": 0.76,
+    "test_precision": 0.515625,
+    "test_recall": 0.66,
+    "test_f1": 0.5789473684210527,
+    "test_auc": 0.8075333333333334,
+    "confusion_matrix": [
+        [
+            119,
+            31
+        ],
+        [
+            17,
+            33
+        ]
+    ]
+}

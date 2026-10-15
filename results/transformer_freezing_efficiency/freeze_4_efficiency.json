@@ -1,0 +1,21 @@
+{
+    "frozen_layers": 4,
+    "trainable_layers": 16,
+    "total_parameters": 688130,
+    "trainable_parameters": 554242,
+    "frozen_parameters": 133888,
+    "parameter_reduction_percent": 19.456788688183916,
+    "fixed_epochs": 5,
+    "total_training_seconds": 153.3413117999953,
+    "total_training_minutes": 2.5556885299999217,
+    "average_seconds_per_epoch": 30.668262359999062,
+    "minimum_epoch_seconds": 27.27423909999925,
+    "maximum_epoch_seconds": 40.67151059999742,
+    "peak_gpu_allocated_mb": 57.9853515625,
+    "peak_gpu_reserved_mb": 62.0,
+    "validation_accuracy": 0.745,
+    "validation_precision": 0.48214285714285715,
+    "validation_recall": 0.5510204081632653,
+    "validation_f1": 0.5142857142857142,
+    "validation_auc": 0.7770644681713745
+}

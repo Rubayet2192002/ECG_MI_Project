@@ -1,0 +1,20 @@
+PTB-XL MI CLASSIFICATION - PRELIMINARY RESULTS
+============================================================
+
+Dataset subset:
+Train: 800 ECGs
+Validation: 200 ECGs
+Test: 200 ECGs
+
+         Model  Accuracy  Precision  Recall  F1_Score  ROC_AUC
+CNN (ResNet18)      76.0      51.56    66.0     57.89    80.75
+   Transformer      73.5      48.35    88.0     62.41    84.46
+        Hybrid      78.5      55.93    66.0     60.55    84.81
+
+Observations:
+- Hybrid produced the highest overall accuracy.
+- Hybrid produced the highest MI precision.
+- Transformer produced the highest MI recall/sensitivity.
+- Transformer produced the highest MI F1 score.
+- Hybrid produced the highest ROC-AUC.
+- Results are preliminary and were obtained from a stratified PTB-XL subset rather than the entire dataset.

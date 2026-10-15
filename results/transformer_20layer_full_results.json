@@ -1,0 +1,31 @@
+{
+    "experiment": "20-layer full Transformer",
+    "frozen_encoder_layers": 0,
+    "num_encoder_layers": 20,
+    "total_parameters": 688130,
+    "trainable_parameters": 688130,
+    "batch_size": 8,
+    "train_samples": 800,
+    "validation_samples": 200,
+    "test_samples": 200,
+    "best_validation_f1": 0.5538461538461539,
+    "test_loss": 0.5968884432315826,
+    "test_accuracy": 0.75,
+    "test_precision": 0.5,
+    "test_recall": 0.76,
+    "test_f1": 0.6031746031746031,
+    "test_auc": 0.7934000000000001,
+    "confusion_matrix": [
+        [
+            112,
+            38
+        ],
+        [
+            12,
+            38
+        ]
+    ],
+    "epochs_completed": 12,
+    "training_time_seconds": 501.3863079547882,
+    "training_time_minutes": 8.356438465913136
+}

@@ -1,0 +1,24 @@
+{
+    "model": "ECGTransformer",
+    "dataset": "PTB-XL demo subset",
+    "train_samples": 800,
+    "validation_samples": 200,
+    "test_samples": 200,
+    "best_validation_f1": 0.6,
+    "test_loss": 0.627207145690918,
+    "test_accuracy": 0.735,
+    "test_precision": 0.4835164835164835,
+    "test_recall": 0.88,
+    "test_f1": 0.624113475177305,
+    "test_auc": 0.8445999999999999,
+    "confusion_matrix": [
+        [
+            103,
+            47
+        ],
+        [
+            6,
+            44
+        ]
+    ]
+}
