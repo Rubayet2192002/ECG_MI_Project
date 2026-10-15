@@ -1,0 +1,54 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Check Rubayet destination repository",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"ls-remote",
+				"--heads",
+				"https://github.com/Rubayet2192002/ECG_MI_Project.git"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Inspect current origin and branches",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"remote",
+				"-v"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Set Rubayet GitHub origin",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"remote",
+				"set-url",
+				"origin",
+				"https://github.com/Rubayet2192002/ECG_MI_Project.git"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Push main to Rubayet repository",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"push",
+				"-u",
+				"origin",
+				"main"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
