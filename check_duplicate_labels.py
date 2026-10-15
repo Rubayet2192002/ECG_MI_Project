@@ -9,7 +9,7 @@ files = [
     PROJECT_ROOT / "data" / "splits" / "train.csv",
     PROJECT_ROOT / "data" / "splits" / "val.csv",
     PROJECT_ROOT / "data" / "splits" / "test.csv",
-    
+
 ]
 
 
