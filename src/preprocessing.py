@@ -8,7 +8,6 @@ train_transform = transforms.Compose([
         degrees=3
     ),
     
-
     transforms.RandomAffine(
         degrees=0,
         translate=(0.02, 0.02)
